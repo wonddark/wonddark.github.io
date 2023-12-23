@@ -31,6 +31,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: PNPM Preparation
+        uses: pnpm/action-setup@v2
+        with:
+          package_json_file: "package.json"
       - name: Detect package manager
         id: detect-package-manager
         run: |
