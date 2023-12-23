@@ -30,12 +30,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: pnpm/action-setup@v2
+        with:
+          package_json_file: "package.json"
       - name: Checkout
         uses: actions/checkout@v4
       - name: Detect package manager
         id: detect-package-manager
         run: |
-          echo "${{ github.workspace }}"
           if [ -f "${{ github.workspace }}/yarn.lock" ]; then
             echo "manager=yarn" >> $GITHUB_OUTPUT
             echo "command=install" >> $GITHUB_OUTPUT
