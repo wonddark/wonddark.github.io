@@ -20,7 +20,7 @@ const Experience = (item: (typeof experiences)[0]) => {
 
 const Experiences = () => {
   return (
-    <div id="experience" className="pt-28">
+    <div id="experience" className="pt-6 lg:pt-28">
       <p className="uppercase">Professional experience</p>
       <ul>
         {experiences.map((item) => (

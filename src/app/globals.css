@@ -20,7 +20,7 @@ body {
   color: rgba(var(--foreground-rgb), .9);
   background: radial-gradient(circle at 20% 0%,
   rgb(var(--background-start-rgb)) 0%,
-  rgb(var(--background-end-rgb)) 60%
+  rgb(var(--background-end-rgb)) 70%
   ) no-repeat fixed;
 }
 

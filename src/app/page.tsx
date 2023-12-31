@@ -6,9 +6,9 @@ import GmailLogo from "@/app/GmailLogo";
 
 export default function Home() {
   return (
-    <div className="grid grid-cols-12 gap-11 max-w-[1200px] mx-auto relative">
-      <div className="col-span-full lg:col-span-4 lg:sticky lg:top-0 h-fit pt-24">
-        <p className="mb-4 text-7xl leading-none text-teal-800 tracking-tighter">
+    <div className="grid grid-cols-1 lg:grid-cols-12 gap-11 max-w-[1200px] mx-auto relative px-2.5">
+      <div className="lg:col-span-4 lg:sticky lg:top-0 h-fit pt-6 lg:pt-24">
+        <p className="mb-4 text-6xl lg:text-7xl leading-none text-teal-800 tracking-tighter">
           <span className={fontHero.className}>Osmanys Fuentes Lombá</span>
         </p>
         <p className="text-emerald-100 text-2xl tracking-tight mb-6">
@@ -44,7 +44,7 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <main className="col-span-full lg:col-span-8 flex flex-col gap-2 -z-10 ">
+      <main className="col-span-full lg:col-span-8 flex flex-col gap-2">
         {/*<div id="about">
           <p>
             Lorem ipsum purus in mollis nunc sed id semper. Suspendisse faucibus
