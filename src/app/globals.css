@@ -10,18 +10,38 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 198, 198, 198;
+    --background-start-rgb: 0, 49, 62;
+    --background-end-rgb: 0, 10, 13;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: rgba(var(--foreground-rgb), .9);
+  background: radial-gradient(circle at 20% 0%,
+  rgb(var(--background-start-rgb)) 0%,
+  rgb(var(--background-end-rgb)) 60%
+  ) no-repeat fixed;
+}
+
+::selection {
+  background: #134e4a;
+  color: #ccfbf1;
+}
+
+a {
+  color: #2dd4bf;
+}
+
+a:hover {
+  color: #14b8a6;
+}
+
+.nav-item:hover {
+  opacity: 1;
+}
+
+.nav-item:hover hr {
+  width: 77px;
+  opacity: 1;
 }
