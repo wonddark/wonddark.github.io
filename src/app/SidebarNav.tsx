@@ -1,8 +1,8 @@
-import navItems from "@/constants/nav-items";
+import navItems from "@constants/nav-items";
 
-const Navbar = () => {
+const SidebarNav = () => {
   return (
-    <nav className="mt-[33px]">
+    <nav className="hidden lg:block lg:mt-[33px] ">
       <ul>
         {navItems.map((item) => (
           <li key={item.id}>
@@ -20,4 +20,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default SidebarNav;
