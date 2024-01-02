@@ -1,4 +1,4 @@
-import experiences from "@/constants/experiences";
+import experiences from "@constants/experiences";
 
 const Experience = (item: (typeof experiences)[0]) => {
   return (

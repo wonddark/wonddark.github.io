@@ -1,8 +1,9 @@
-import Navbar from "@/app/Navbar";
-import Experiences from "@/app/Experiences";
-import { fontHero, fontHero2 } from "@/constants/font-styles";
-import GithubLogo from "@/app/GithubLogo";
-import GmailLogo from "@/app/GmailLogo";
+import SidebarNav from "@app/SidebarNav";
+import Experiences from "@app/Experiences";
+import { fontHero, fontHero2 } from "@constants/font-styles";
+import GithubLogo from "@app/GithubLogo";
+import GmailLogo from "@app/GmailLogo";
+import TopNavbar from "@app/TopNavbar";
 
 export default function Home() {
   return (
@@ -16,16 +17,16 @@ export default function Home() {
             Web Developer and Entrepreneur
           </span>
         </p>
-        <p className="mb-24">
+        <p className="lg:mb-24">
           I build useful, beautiful and accesible data driven applications for
           the web
         </p>
-        <Navbar />
-        <div className="mt-40 text-center">
+        <SidebarNav />
+        <div className="mt-7 lg:mt-40">
           <a
             href="/cv-osmanys-fuentes-lombá-en-2023.pdf"
             download="cv-osmanys-fuentes-lombá-en-2023.pdf"
-            className="border border-teal-200 hover:border-transparent hover:bg-teal-800 text-teal-200 hover:text-teal-50 py-4 px-14 rounded-sm tracking-widest cursor-pointer"
+            className="block border border-teal-200 hover:border-transparent hover:bg-teal-800 text-teal-200 hover:text-teal-50 py-4 px-14 rounded-sm tracking-widest cursor-pointer w-fit mx-auto"
           >
             Download CV
           </a>
@@ -44,7 +45,8 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <main className="col-span-full lg:col-span-8 flex flex-col gap-2">
+      <main className="col-span-full lg:col-span-8 flex flex-col gap-2 relative">
+        <TopNavbar />
         <div
           id="about"
           className="pt-6 lg:pt-28 text-[1.15rem] leading-relaxed"

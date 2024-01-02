@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ReactNode } from "react";
-import { fontBase } from "@/constants/font-styles";
+import { fontBase } from "@constants/font-styles";
 
 export const metadata: Metadata = {
   title: "Create Next App",
