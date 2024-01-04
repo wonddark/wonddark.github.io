@@ -72,3 +72,20 @@ a:hover {
   background-color: rgb(var(--background-start-rgb));
   margin: 0 -0.625rem;
 }
+
+.exp-item {
+  padding: 17px;
+  border-radius: 7px;
+  cursor: pointer;
+  opacity: .9;
+}
+
+.exp-item.hovered {
+  font-size: 1.1rem;
+  background-color: #134e4a;
+  opacity: 1;
+}
+
+#experience:has( > ul > .exp-item.hovered) > ul > .exp-item:not(.hovered) {
+  opacity: .4;
+}

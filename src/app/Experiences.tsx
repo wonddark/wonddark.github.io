@@ -1,8 +1,22 @@
+"use client";
 import experiences from "@constants/experiences";
+import { MouseEventHandler } from "react";
 
 const Experience = (item: (typeof experiences)[0]) => {
+  const setHovered: MouseEventHandler<HTMLLIElement> = ({ currentTarget }) => {
+    currentTarget.className = currentTarget.className + " hovered";
+  };
+  const unsetHovered: MouseEventHandler<HTMLLIElement> = ({
+    currentTarget,
+  }) => {
+    currentTarget.className = currentTarget.className.replace(" hovered", "");
+  };
   return (
-    <li className="p-[17px] rounded-[7px] hover:bg-teal-800 cursor-pointer hover:text-teal-50 text-[1.1rem]">
+    <li
+      className="p-[17px] rounded-[7px] cursor-pointer text-[1.1rem] exp-item"
+      onMouseEnter={setHovered}
+      onMouseLeave={unsetHovered}
+    >
       <p className="font-semibold text-teal-100">{item.role}</p>
       <p className="italic my-2">{item.company}</p>
       <div className="grid grid-cols-[70%_30%]">
