@@ -1,6 +1,6 @@
-import { Exo_2 } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 
-export const fontBase = Exo_2({ subsets: ["latin"], weight: "300" });
+export const fontBase = JetBrains_Mono({ subsets: ["latin"], weight: "300" });
 
-export const fontHero = Exo_2({ subsets: ["latin"], weight: "700" });
-export const fontHero2 = Exo_2({ subsets: ["latin"], weight: "500" });
+export const fontHero = JetBrains_Mono({ subsets: ["latin"], weight: "700" });
+export const fontHero2 = JetBrains_Mono({ subsets: ["latin"], weight: "500" });
