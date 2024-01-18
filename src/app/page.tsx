@@ -18,8 +18,7 @@ export default function Home() {
           </span>
         </p>
         <p className="lg:mb-24">
-          I build useful, beautiful and accesible data driven applications for
-          the web
+          Years of experience building B2B web applications
         </p>
         <SidebarNav />
         <div className="mt-7 lg:mt-40">
