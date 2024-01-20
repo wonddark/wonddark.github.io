@@ -9,6 +9,8 @@ export const frameworks_libraries = [
   { name: "Symfony", "Master level": 85 },
   { name: "API-Platform", "Master level": 92 },
   { name: "Redux", "Master level": 98.5 },
+  { name: "Jest", "Master level": 55 },
+  { name: "@testing-library", "Master level": 75 },
 ];
 
 export const programming_languages = [
