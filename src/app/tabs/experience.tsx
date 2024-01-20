@@ -72,7 +72,7 @@ function ProfessionalExperience() {
   );
 }
 
-function ToyProjects() {
+/*function ToyProjects() {
   return (
     <Card className="mt-5">
       <Title>Toy projects</Title>
@@ -121,7 +121,7 @@ function ToyProjects() {
       </Table>
     </Card>
   );
-}
+}*/
 
 export function ExperiencePanel() {
   return (
