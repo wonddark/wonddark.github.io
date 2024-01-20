@@ -29,7 +29,7 @@ export default function RootLayout({
             </Text>
           </div>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-[25%_75%] max-w-[1920px] px-3">
+        <div className="grid grid-cols-1 lg:grid-cols-[25%_75%] max-w-[1920px] px-3 pb-3">
           <div className="lg:pr-2 mb-5 lg:mb-0">
             <div className="text-left">
               <Metric>Osmanys Fuentes Lombá</Metric>
