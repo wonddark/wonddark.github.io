@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ReactNode } from "react";
-import { Bold, Metric, Subtitle, Text, Title } from "@tremor/react";
+import { Bold, Metric, Subtitle, Title } from "@tremor/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
