@@ -13,9 +13,10 @@ export function AboutPanel() {
         <Text>
           I felt in love with programming writing my first routines in Ada and
           since then it stay in me the custom of the explicit, the descriptive,
-          and the efficient ways. I'm more interested in knowing the whys and
-          whats before the hows that's why when I lay my hands on the keyboard I
-          already have a clear objective of what I want to accomplish.
+          and the efficient ways. I&apos;m more interested in knowing the whys
+          and whats before the hows that&apos;s why when I lay my hands on the
+          keyboard I already have a clear objective of what I want to
+          accomplish.
         </Text>
       </Card>
     </TabPanel>
