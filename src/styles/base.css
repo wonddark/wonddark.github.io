@@ -3,6 +3,75 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-    font-size: 14px;
+* {
+    transition-duration: 700ms;
+}
+
+svg, path {
+    transition-duration: 0s;
+}
+
+.top-nav {
+    animation-name: adjust-nav-bar-container;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-timeline: scroll(root);
+    animation-range: 0 200px;
+}
+
+@keyframes adjust-nav-bar-container {
+    from {
+        height: 112px;
+    }
+
+    to {
+        height: 38px;
+        background-image: linear-gradient(to right, transparent, #003e3e, transparent);
+    }
+}
+
+.top-nav nav {
+    animation: adjust-nav-bar linear both;
+    animation-fill-mode: both;
+    animation-timeline: scroll(root);
+    animation-range: 0 200px;
+}
+
+@keyframes adjust-nav-bar {
+    to {
+        padding: 8px 0;
+    }
+}
+
+.exp-item {
+    animation: appear linear both;
+    animation-timeline: view();
+    animation-range: cover 15% cover 80%;
+}
+
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        scale: 0;
+        translate: 0 500px;
+    }
+
+    40% {
+        opacity: 1;
+        scale: 1;
+        translate: 0 0;
+    }
+
+    80% {
+        opacity: 1;
+        scale: 1;
+        translate: 0 0;
+    }
+
+    100% {
+        opacity: 0;
+        scale: 0;
+        translate: 0 -500px;
+    }
 }
