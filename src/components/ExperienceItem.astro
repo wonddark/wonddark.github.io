@@ -1,0 +1,23 @@
+---
+const { compName, role, date, compLink, description } = Astro.props;
+---
+
+<div class="h-screen relative">
+  <div
+    class="exp-item grid grid-cols-12 grid-rows-[repeat(40,10px)] px-9 align-top sticky top-[33%]">
+    <span
+      class="font-bold text-4xl leading-[1.2] tracking-[0.06em] uppercase col-start-1 col-end-13 row-start-1 row-end-6">{role}</span>
+    <span
+      class="font-bold text-2xl leading-[1.23] col-start-1 col-end-5 row-start-[27] row-end-[30]">{compName}</span>
+    <span
+      class="font-light text-xl leading-[1.227] mt-2 col-start-1 col-end-5 row-start-[30] row-end-[34]">{date}</span>
+    <div class="col-start-1 col-end-5 row-start-[35] row-end-[41]">
+      <a href={compLink} target="_blank"
+         class="flex justify-center items-center p-[10px_20px] rounded-md bg-[#009394] hover:bg-[#006270] font-medium text-lg leading-[1.22] tracking-[0.08em] w-fit">
+        Visit website <i
+        class="fa-solid fa-arrow-up-right-from-square ml-2.5"></i></a>
+    </div>
+    <p
+      class="col-start-4 col-end-11 row-start-[9] row-end-[27] text-2xl leading-[1.35] tracking-wider italic exp-item-desc flex items-center">{description}</p>
+  </div>
+</div>
