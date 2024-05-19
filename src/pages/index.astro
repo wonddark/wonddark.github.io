@@ -1,31 +1,29 @@
 ---
-import Header from "../components/Header.astro";
-import About from "../components/About.astro";
-import '../styles/base.css'
-import Experience from "../components/Experience.astro";
+
 ---
 
-<html lang="en" class="text-[16px] font-[Monserrat,sans-serif]">
-<head>
-  <meta charset="utf-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <meta name="viewport" content="width=device-width" />
-  <meta name="generator" content={Astro.generator} />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <link href="/css/fontawesome.min.css" rel="stylesheet" />
-  <link href="/css/solid.min.css" rel="stylesheet" />
-  <title>Osmanys Fuentes Lombá - Experienced Web Developer</title>
-  <meta name="description"
-        content="Results-oriented experienced web developer strongly focused on user experience specialized on the business to business sector">
-  <meta name="author" content="Osmanys Fuentes Lombá">
-</head>
-<body class="bg-white dark:bg-[#131516] dark:text-[#F2F3F4]">
-<Header />
-<!--<About />
-<Experience />-->
-</body>
-</html>
+<script is:inline>
+  window.addEventListener("load", () => {
+    const saved = localStorage.getItem("language");
+    const preferred = navigator.language;
+
+    if (saved) {
+      window.location = `/${saved}`;
+    } else if (preferred) {
+      const language = new Intl.DisplayNames([], {
+        type: "language",
+        style: "narrow",
+      });
+      if (["en", "es", "pt"].includes(language.of(preferred))) {
+        window.location = `/${language.of(preferred)}`;
+        localStorage.setItem("language", language.of(preferred));
+      } else {
+        window.location = "/en";
+        localStorage.setItem("language", "en");
+      }
+    } else {
+      window.location = "/en";
+      localStorage.setItem("language", "en");
+    }
+  });
+</script>
