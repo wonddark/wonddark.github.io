@@ -46,7 +46,7 @@ import WebStorm from "../brand-logos/WebStorm.astro";
 
 <section class="bg-[#1D2122]">
   <div
-    class="max-w-[1560px] mx-auto px-10 lg:px-16 pt-10 min-h-screen flex flex-col gap-[70px]">
+    class="max-w-[1560px] mx-auto px-10 lg:px-16 pt-10 min-h-screen flex flex-col gap-[20px] md:gap-[70px]">
     <p id="about"
        class="font-semibold text-2xl lg:text-3xl leading-[1.2] text-center tracking-[0.19em] uppercase text-[#009394]">
       Skills</p>
@@ -56,68 +56,67 @@ import WebStorm from "../brand-logos/WebStorm.astro";
         Frameworks, libraries and tools I&apos;m used to work with in my
         day-to-day</p>
     </div>
-    <div class="skils-contaner flex-1 overflow-hidden overflow h-full">
-      <div class="skills relative text-[#009394] min-h-full">
-        <React />
-        <Next />
-        <Remix />
-        <AstroLogo />
-        <Typescript />
-        <Javascript />
-        <CSS3 />
-        <SASS />
-        <AntD />
-        <Bootstrap />
-        <Jest />
-        <Mocha />
-        <MUI />
-        <StyledComponents />
-        <TailwindCSS />
-        <TestingLibrary />
-        <Vite />
-        <Webpack />
-        <AWS />
-        <Axios />
-        <Bitbucket />
-        <Docker />
-        <Express />
-        <Git />
-        <Github />
-        <Bash />
-        <GoogleAnalytics />
-        <GoogleTagManager />
-        <GrapQL />
-        <Jira />
-        <Linux />
-        <MySQL />
-        <NPM />
-        <OpenSUSE />
-        <PHP />
-        <PNPM />
-        <PostgreSQL />
-        <Redux />
-        <Slack />
-        <SQLite />
-        <Swagger />
-        <Symfony />
-        <WebStorm />
-      </div>
+    <div class="skills-container overflow-hidden flex-1 relative text-[#009394]">
+      <React />
+      <Next />
+      <Remix />
+      <AstroLogo />
+      <Typescript />
+      <Javascript />
+      <CSS3 />
+      <SASS />
+      <AntD />
+      <Bootstrap />
+      <Jest />
+      <Mocha />
+      <MUI />
+      <StyledComponents />
+      <TailwindCSS />
+      <TestingLibrary />
+      <Vite />
+      <Webpack />
+      <AWS />
+      <Axios />
+      <Bitbucket />
+      <Docker />
+      <Express />
+      <Git />
+      <Github />
+      <Bash />
+      <GoogleAnalytics />
+      <GoogleTagManager />
+      <GrapQL />
+      <Jira />
+      <Linux />
+      <MySQL />
+      <NPM />
+      <OpenSUSE />
+      <PHP />
+      <PNPM />
+      <PostgreSQL />
+      <Redux />
+      <Slack />
+      <SQLite />
+      <Swagger />
+      <Symfony />
+      <WebStorm />
     </div>
   </div>
 </section>
 
 <script is:inline>
-  let firstAnimate = null
+  let firstAnimate = null;
+
   function animateFirst() {
-    const skillsContainer = document.getElementsByClassName("skills")?.[0];
+    const skillsContainer = document.getElementsByClassName("skills-container")?.[0];
 
     const svgElements = skillsContainer.getElementsByTagName("svg");
     for (let svgElement of svgElements) {
-      svgElement.style.fontSize = 'unset';
-      svgElement.style.top = 'unset';
-      svgElement.style.left = 'unset';
-      svgElement.style.animationDelay = 'unset';
-      svgElement.style.display = 'none';
+      svgElement.style.fontSize = "unset";
+      svgElement.style.top = "unset";
+      svgElement.style.left = "unset";
+      svgElement.style.animationDelay = "unset";
+      svgElement.style.display = "none";
     }
 
     const containerWidth = skillsContainer.clientWidth;
@@ -137,15 +136,15 @@ import WebStorm from "../brand-logos/WebStorm.astro";
       svgElement.style.top = `${randomPositionY}px`;
       svgElement.style.left = `${randomPositionX}px`;
       svgElement.style.animationDelay = `${Math.random() * (1000 - 1)}ms`;
-      svgElement.style.display = 'initial';
+      svgElement.style.display = "initial";
     }
 
     if (firstAnimate) {
-      clearInterval(firstAnimate)
+      clearInterval(firstAnimate);
     }
 
-    firstAnimate = setInterval(animateFirst, 5000)
+    firstAnimate = setInterval(animateFirst, 5000);
   }
 
-  animateFirst()
-  </script>
+  animateFirst();
+</script>

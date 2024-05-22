@@ -75,3 +75,29 @@ svg, path {
         translate: 0 -500px;
     }
 }
+
+.skills-container svg {
+    position: absolute;
+    animation-name: slide-right-to-left;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+}
+
+@keyframes slide-right-to-left {
+    0% {
+        transform: scale(0);
+        opacity: 0
+    }
+
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0);
+        opacity: 0;
+        display: none;
+    }
+}
