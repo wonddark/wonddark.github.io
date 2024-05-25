@@ -14,7 +14,7 @@ const { compName, role, date, compLink, description, location, skills } = Astro.
   <div class="col-start-2 col-end-3 row-start-5 row-end-13 m-1 mt-2 md:mt-0">
     <span class="font-bold text-base md:text-2xl !leading-[1.2] tracking-[0.06em] uppercase col-start-1">{role}</span>
     <p class="mt-1.5 tracking-wide text-base md:text-2xl">{description}</p>
-    <ul class="mt-1.5 mb-4 flex flex-wrap gap-1.5 text-xs md:text-lg font-semibold text-[#00abac] tracking-wider italic">{skills.map(item => <li><span>{item}</span></li>)}</ul>
+    <ul class="mt-1.5 mb-4 flex flex-wrap gap-1.5 text-xs md:text-lg font-semibold text-[#00abac] tracking-wider italic">{skills.map((item: string) => <li><span>{item}</span></li>)}</ul>
   </div>
 </li>
 
