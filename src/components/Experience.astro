@@ -9,7 +9,7 @@ import { experiencesList } from "../data/experiences-list";
     <p id="experience"
        class="font-semibold text-2xl lg:text-3xl leading-[1.2] text-center tracking-[0.19em] uppercase text-[#009394] mb-12">
       Relevant experience</p>
-    <ul class="max-w-2xl mx-auto w-full mt-12">
+    <ul class="max-w-5xl mx-auto w-full mt-12">
       {experiencesList.map(item =>
         <ExperienceItem compName={item.company} role={item.role}
                         date={item.date} compLink={item.href}
