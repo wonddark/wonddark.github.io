@@ -1,10 +1,18 @@
 ---
-const { thumbnail, name, description, detailsUrl, status, skills } = Astro.props;
+const {
+  thumbnail,
+  name,
+  description,
+  detailsUrl,
+  status,
+  skills,
+} = Astro.props;
 ---
 
 <div class="flex flex-col gap-10 w-full max-w-[360px] min-w-60">
   <div class="overflow-hidden rounded-t-md max-h-64">
-  <img src={thumbnail} alt={name} class="w-auto h-full object-cover hover:scale-110">
+    <img src={thumbnail} alt={name}
+         class="w-auto h-full object-cover hover:scale-110">
   </div>
   <div class="flex flex-col gap-5">
     <div>
@@ -15,7 +23,7 @@ const { thumbnail, name, description, detailsUrl, status, skills } = Astro.props
     <div>
       <p class="font-medium leading-[1.25]">{description}</p>
       <ul
-        class="flex gap-1.5 text-sm italic font-bold text-[#00abac]">{skills.slice(0, 3).map(item =>
+        class="flex gap-1.5 text-sm italic font-bold text-[#00abac]">{skills.slice(0, 3).map((item: string) =>
         <li><span>{item}</span></li>)}</ul>
     </div>
   </div>
