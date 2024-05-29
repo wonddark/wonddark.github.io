@@ -1,0 +1,17 @@
+---
+import projects from "../../data/projects_en";
+import ProjectItem from "../ProjectItem.astro";
+---
+
+<section class="bg-[#1D2122]">
+  <div class="max-w-[1560px] mx-auto px-10 lg:px-16 py-10">
+    <h2 id="projects"
+        class="font-semibold text-2xl lg:text-3xl leading-[1.2] text-center tracking-[0.19em] uppercase text-[#009394] mb-12">
+      Projects</h2>
+    <p class="mt-12 mb-20 font-medium leading-[1.25] text-center">Crafted with
+      skill and care to help our clients grow their business!</p>
+    <div class="flex flex-col md:flex-row md:flex-wrap gap-20 md:justify-between">
+      {projects.map(item => <ProjectItem {...item} />)}
+    </div>
+  </div>
+</section>
