@@ -31,12 +31,12 @@ function HeaderMenu() {
                className={`${currentSection === "#experience" ? "border-b border-[#009394] text-[#009394] hover:brightness-125" : "hover:border-b hover:border-[#009394] hover:text-[#009394]"} px-1.5`}>Experiencia</a>
           </li>
           <li>
-            <a href="#toolbox"
-               className={`${currentSection === "#toolbox" ? "border-b border-[#009394] text-[#009394] hover:brightness-125" : "hover:border-b hover:border-[#009394] hover:text-[#009394]"} px-1.5`}>Ferramentas</a>
-          </li>
-          <li>
             <a href="#projects"
                className={`${currentSection === "#projects" ? "border-b border-[#009394] text-[#009394] hover:brightness-125" : "hover:border-b hover:border-[#009394] hover:text-[#009394]"} px-1.5`}>Proyectos</a>
+          </li>
+          <li>
+            <a href="#contact"
+               className={`${currentSection === "#contact" ? "border-b border-[#009394] text-[#009394] hover:brightness-125" : "hover:border-b hover:border-[#009394] hover:text-[#009394]"} px-1.5`}>Contato</a>
           </li>
           <li>
             <LanguageSelector />

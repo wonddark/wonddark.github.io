@@ -32,12 +32,12 @@ function HeaderMenu() {
                className={`${currentSection === "#experience" ? "border-b border-[#009394] text-[#009394] hover:brightness-125" : "hover:border-b hover:border-[#009394] hover:text-[#009394]"} px-1.5`}>Experience</a>
           </li>
           <li>
-            <a href="#toolbox"
-               className={`${currentSection === "#toolbox" ? "border-b border-[#009394] text-[#009394] hover:brightness-125" : "hover:border-b hover:border-[#009394] hover:text-[#009394]"} px-1.5`}>Toolbox</a>
-          </li>
-          <li>
             <a href="#projects"
                className={`${currentSection === "#projects" ? "border-b border-[#009394] text-[#009394] hover:brightness-125" : "hover:border-b hover:border-[#009394] hover:text-[#009394]"} px-1.5`}>Projects</a>
+          </li>
+          <li>
+            <a href="#contact"
+               className={`${currentSection === "#contact" ? "border-b border-[#009394] text-[#009394] hover:brightness-125" : "hover:border-b hover:border-[#009394] hover:text-[#009394]"} px-1.5`}>Contact</a>
           </li>
           <li className="relative">
             <LanguageSelector />
