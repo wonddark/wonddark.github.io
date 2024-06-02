@@ -1,0 +1,47 @@
+---
+const {
+  thumbnail,
+  name,
+  description,
+  url,
+  projectPage,
+  status,
+  skills,
+} = Astro.props;
+---
+
+<div class="flex flex-col md:flex-row items-start gap-5 lg:gap-10 w-full max-w-screen-xl">
+  <div class="overflow-hidden md:border border-gray-600 md:p-1.5 rounded-md md:w-3/5 max-w-[720px]">
+    <img src={thumbnail} alt={name}
+         class="w-full h-auto object-cover hover:scale-110 rounded-md">
+  </div>
+  <div class="flex flex-col gap-2 flex-1 flex-grow">
+    <div>
+      <p class="text-lg text-gray-500 font-extralight">Nome</p>
+      <h6 class="font-bold">{name}</h6>
+    </div>
+    <div>
+      <p class="text-lg text-gray-500 font-extralight">Decricao</p>
+      <p>{description}</p>
+    </div>
+    <div>
+      <p class="text-lg text-gray-500 font-extralight">Habilidades</p>
+      <ul
+        class="flex gap-1.5 text-sm italic font-bold text-[#00abac]">{skills.slice(0, 3).map((item: string) =>
+        <li><span>{item}</span></li>)}</ul>
+    </div>
+    <div>
+      <p class="text-lg text-gray-500 font-extralight">Estado</p>
+      <p
+        class="flex items-center gap-1 font-bold w-fit"><span class="h-2.5 w-2.5 inline-block align-middle rounded-full bg-[#00abac]"></span>{status}</p>
+    </div>
+    <div>
+      <p class="text-lg text-gray-500 font-extralight">Url</p>
+      <a href={url} target="_blank" class="hover:text-[#00abac]">{url} <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </div>
+    <div>
+      <p class="text-lg text-gray-500 font-extralight">Detalhes</p>
+      <a href={projectPage} class="hover:text-[#00abac]">{projectPage}</a>
+    </div>
+  </div>
+</div>
