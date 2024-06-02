@@ -9,7 +9,7 @@ export const experiencesList: {
 }[] = [
   {
     company: "Datamart SpA",
-    role: "Frontend Developer",
+    role: "Frontend Web Developer",
     date: "Jun 2022 - Present",
     href: "https://datamart.co/",
     description: "Planned, built and maintained optimized and secure products for the fintech market. Special care and security checks were required as we were working with sensitive user data.",
@@ -27,7 +27,7 @@ export const experiencesList: {
   },
   {
     company: "Dardeus Inc",
-    role: "Frontend Developer",
+    role: "Frontend Web Developer",
     date: "Jul 2021 - May 2022",
     href: "https://www.dardeus.com/",
     description: "As a part of a small team I contribuited to the development y maintenance of new features for the company ecommerce platform helping to an increase in market share and powering the system scalability in front of the rising of clients and prospects numbers.",
@@ -36,7 +36,7 @@ export const experiencesList: {
   },
   {
     company: "360SmartConnect",
-    role: "Frontend Developer",
+    role: "Frontend Web Developer",
     date: "Feb 2021 - Jun 2021",
     href: "https://www.360sc.io/",
     description: "Development of new functionalities for the company's own product with the aim of meeting growing customer demand and increasing reach.",
@@ -45,7 +45,7 @@ export const experiencesList: {
   },
   {
     company: "Subzero Engineering",
-    role: "Frontend Developer",
+    role: "Frontend Web Developer",
     date: "Sep 2020 - Dec 2020",
     href: "https://www.subzeroeng.com/",
     description: "Modernization of the company's old management system by implementing new technologies and graphical interface, increasing process efficiency by 25% and monitoring deliveries and availability by 40% through real-time data visualization.",
@@ -53,7 +53,7 @@ export const experiencesList: {
     skills:['react', 'redux', 'bootstrap', 'axios', 'yup', 'typescript']
   },
   {
-    company: "Soleil Dreams Solutions",
+    company: "Soleil Dreams",
     role: "Web Developer",
     date: "Jul 2020 - Aug 2020",
     href: "https://soleildreams.com/",
@@ -72,7 +72,7 @@ export const experiencesList: {
   },
   {
     company: "Ryder Systems",
-    role: "Frontend Developer",
+    role: "Frontend Web Developer",
     date: "Oct 2019 - Dec 2019",
     href: "https://www.ryder.com/",
     description: "Development of an MVP with the objective of facilitating intra-business communication and project management.",
