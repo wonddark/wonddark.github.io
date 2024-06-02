@@ -7,7 +7,7 @@
     transition-duration: 700ms;
 }
 
-svg, path {
+svg, path, i {
     transition-duration: 0s;
 }
 
