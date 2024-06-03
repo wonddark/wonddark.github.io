@@ -3,17 +3,71 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --primary-color: #00AEAE;
+    --color: #1D2122;
+    --background: #F2F3F4;
+    --alternate-background: #CDD2D4;
+    --hover-background: #007d8a;
+    --input-color: #131313;
+    --input-background: #F2F3F4;
+    --input-background-focus: #EEE;
+    --header-nav-background: #eff;
+    --link-color: #006363;
+    --link-hover-brightness: 175%;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: #009394;
+        --color: #F2F3F4;
+        --background: #131516;
+        --alternate-background: #1D2122;
+        --hover-background: #006270;
+        --input-background-focus: #e2e2e2;
+        --header-nav-background: #003535;
+        --link-color: #59bdbf;
+        --link-hover-brightness: 115%;
+    }
+}
+
 * {
-    transition-duration: 700ms;
+    transition-duration: 630ms;
+}
+
+svg, path, i, svg ~ span {
+    transition-duration: 0s;
 }
 
 html {
     font-size: 16px;
-    font-family: Montserrat, sans-serif;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+    line-height: 1.35;
 }
 
-svg, path, i {
-    transition-duration: 0s;
+h1, h2, h3, h4, h5, h6 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 200;
+    line-height: 1.7;
+}
+
+a {
+    color: var(--link-color)
+}
+
+a:hover {
+    filter: brightness(var(--link-hover-brightness));
+}
+
+input:not(:has([type='submit'],[type='reset'],[type='button'])), textarea {
+    background-color: var(--input-background);
+    color: var(--input-color)
+}
+
+input:not(:has([type='submit'],[type='reset'],[type='button'])):focus, textarea:focus {
+    background-color: var(--input-background-focus);
 }
 
 .top-nav {
@@ -31,7 +85,7 @@ svg, path, i {
 
     to {
         height: 38px;
-        background-image: linear-gradient(to right, transparent, #003e3e, transparent);
+        background-color: var(--header-nav-background);
     }
 }
 
@@ -46,4 +100,12 @@ svg, path, i {
     to {
         padding: 8px 0;
     }
+}
+
+section:nth-child(even) {
+    background: var(--alternate-background);
+}
+
+form label, label:has(~ input, ~ textarea) {
+    font-weight: 200;
 }
