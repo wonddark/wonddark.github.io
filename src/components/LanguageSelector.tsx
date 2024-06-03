@@ -1132,7 +1132,7 @@ function LanguageSelector() {
 
   return (
     <div
-      className="flex gap-2.5 text-xl ">
+      className="flex gap-2.5 text-lg ">
       <a href="/en" onClick={() => toggleLanguage("en")}
          className="hover:brightness-125">
         {FLAGS.find(item => item.language === "en")?.flag}
