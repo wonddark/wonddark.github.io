@@ -2,5 +2,5 @@
 const {text, icon, classes, ...rest} = Astro.props
 ---
 
-<button class={`flex justify-center items-center gap-2.5 uppercase p-[10px_20px] rounded-md bg-primary text-white hover:bg-primary-hover font-medium text-lg w-fit ${classes}`} {...rest}>
+<button class={`flex justify-center items-center gap-2.5 uppercase p-[10px_20px] rounded-md bg-primary text-white hover:bg-primary-hover text-lg w-fit ${classes}`} {...rest}>
   {text}{icon ? <i class={`fa-solid ${icon}`} />:null}</button>
