@@ -9,7 +9,9 @@ import LinkButton from "../LinkButton.astro";
     class="max-w-[1560px] mx-auto px-10 lg:px-16 md:pt-[113px] min-h-max">
     <div class="absolute top-0 left-0 md:hidden">
       <img alt="" src="/images/home_mobile.webp"
-           class="w-full h-auto object-cover">
+           class="w-full h-auto object-cover hidden dark:block">
+      <img alt="" src="/images/home_mobile_light.webp"
+           class="w-full h-auto object-cover dark:hidden">
     </div>
     <div
       class="h-full grid grid-cols-1 md:grid-cols-2 gap-x-10 mt-64 md:mt-3 lg:mt-0 pb-9 md:pb-16 lg:pb-12">
@@ -84,10 +86,15 @@ import LinkButton from "../LinkButton.astro";
       </div>
       <div class="hidden md:block">
         <img src="/images/home_desktop.webp"
-             class="w-full h-auto object-cover hidden lg:block mt-12"
+             class="w-full h-auto object-cover hidden dark:lg:block mt-12"
+             alt="" />
+        <img src="/images/home_desktop_light.webp"
+             class="w-full h-auto object-cover hidden lg:block dark:lg:hidden mt-12"
              alt="" />
         <img alt="" src="/images/home_tablet.webp"
-             class="w-full h-auto object-cover hidden md:max-lg:block md:mt-[187px]">
+             class="w-full h-auto object-cover hidden dark:md:max-lg:block md:mt-[187px]">
+        <img alt="" src="/images/home_tablet_light.webp"
+             class="w-full h-auto object-cover hidden md:max-lg:block dark:md:max-lg:hidden md:mt-[187px]">
       </div>
     </div>
   </div>

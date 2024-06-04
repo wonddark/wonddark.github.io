@@ -10,7 +10,9 @@ import LinkButton from "../LinkButton.astro";---
     <div class="grid grid-cols-1 xl:grid-cols-2 gap-x-32 items-center">
       <div class="xl:col-start-1 xl:col-end-6">
         <img src="/images/about.webp" alt=""
-             class="h-full w-auto object-cover mx-auto" />
+             class="h-full w-auto object-cover mx-auto hidden dark:block" />
+        <img src="/images/about_light.webp" alt=""
+             class="h-full w-auto object-cover mx-auto dark:hidden" />
       </div>
       <div class="xl:col-start-7 xl:col-end-13 max-w-[724px] xl:-ml-10 my-10 md:my-28">
         <p class="text-4xl">Hello!</p>
@@ -74,7 +76,7 @@ import LinkButton from "../LinkButton.astro";---
         </div>
         <LinkButton url="/files/OsmanysFL_resume_en.pdf"
            download="OsmanysFuentesLomba-RESUME.pdf"
-        text="Get my resume" icon="fa-download" />
+        text="Resume" icon="fa-download" />
       </div>
     </div>
   </div>
