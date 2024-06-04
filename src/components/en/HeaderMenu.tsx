@@ -21,23 +21,23 @@ function HeaderMenu() {
           className="flex gap-8">
           <li>
             <a href="#home"
-               className={`${currentSection === "" || currentSection === "#home" ? "border-b border-primary text-primary hover:brightness-125" : "hover:underline hover:text-primary"} px-1.5 pb-1`}>Home</a>
+               className={`${currentSection === "" || currentSection === "#home" ? "border-b border-primary text-primary hover:brightness-125" : "text-default hover:underline hover:text-primary"} px-1.5 pb-1`}>Home</a>
           </li>
           <li>
             <a href="#about"
-               className={`${currentSection === "#about" ? "border-b border-primary text-primary hover:brightness-125" : "hover:border-b hover:border-primary hover:text-primary"} px-1.5 pb-1`}>About</a>
+               className={`${currentSection === "#about" ? "border-b border-primary text-primary hover:brightness-125" : "text-default hover:border-b hover:border-primary hover:text-primary"} px-1.5 pb-1`}>About</a>
           </li>
           <li>
             <a href="#experience"
-               className={`${currentSection === "#experience" ? "border-b border-primary text-primary hover:brightness-125" : "hover:border-b hover:border-primary hover:text-primary"} px-1.5 pb-1`}>Experience</a>
+               className={`${currentSection === "#experience" ? "border-b border-primary text-primary hover:brightness-125" : "text-default hover:border-b hover:border-primary hover:text-primary"} px-1.5 pb-1`}>Experience</a>
           </li>
           <li>
             <a href="#projects"
-               className={`${currentSection === "#projects" ? "border-b border-primary text-primary hover:brightness-125" : "hover:border-b hover:border-primary hover:text-primary"} px-1.5 pb-1`}>Projects</a>
+               className={`${currentSection === "#projects" ? "border-b border-primary text-primary hover:brightness-125" : "text-default hover:border-b hover:border-primary hover:text-primary"} px-1.5 pb-1`}>Projects</a>
           </li>
           <li>
             <a href="#contact"
-               className={`${currentSection === "#contact" ? "border-b border-primary text-primary hover:brightness-125" : "hover:border-b hover:border-primary hover:text-primary"} px-1.5 pb-1`}>Contact</a>
+               className={`${currentSection === "#contact" ? "border-b border-primary text-primary hover:brightness-125" : "text-default hover:border-b hover:border-primary hover:text-primary"} px-1.5 pb-1`}>Contact</a>
           </li>
           <li className="relative">
             <LanguageSelector />
