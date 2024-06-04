@@ -14,7 +14,9 @@
     --input-background-focus: #EEE;
     --header-nav-background: #eff;
     --link-color: #006363;
-    --link-hover-brightness: 175%;
+    --link-hover-brightness: 115%;
+    --default-weigth: 400;
+    --heading-weight: 500;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,6 +30,8 @@
         --header-nav-background: #003535;
         --link-color: #59bdbf;
         --link-hover-brightness: 115%;
+        --default-weigth: 300;
+        --heading-weight: 400;
     }
 }
 
@@ -35,22 +39,18 @@
     transition-duration: 630ms;
 }
 
-svg, path, i, svg ~ span {
-    transition-duration: 0s;
-}
-
 html {
     font-size: 16px;
     font-family: Roboto, sans-serif;
-    font-weight: 300;
+    font-weight: var(--default-weigth);
     letter-spacing: 0.05rem;
     line-height: 1.35;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: Montserrat, sans-serif;
-    font-weight: 200;
-    line-height: 1.7;
+    font-weight: var(--heading-weight);
+    line-height: 1.22;
 }
 
 a {
@@ -100,6 +100,10 @@ input:not(:has([type='submit'],[type='reset'],[type='button'])):focus, textarea:
     to {
         padding: 8px 0;
     }
+}
+
+svg, path, i, svg ~ span {
+    transition-duration: 0s;
 }
 
 section:nth-child(even) {
