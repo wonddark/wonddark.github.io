@@ -28,11 +28,11 @@ function HeaderMenu() {
           </li>
           <li>
             <a href="#experience"
-               className={`${currentSection === "#experience" ? "border-b border-[#009394] text-[#009394] hover:brightness-125" : "hover:border-b hover:border-[#009394] hover:text-[#009394]"} px-1.5`}>Experiencia</a>
+               className={`${currentSection === "#experience" ? "border-b border-[#009394] text-[#009394] hover:brightness-125" : "hover:border-b hover:border-[#009394] hover:text-[#009394]"} px-1.5`}>Experiência</a>
           </li>
           <li>
             <a href="#projects"
-               className={`${currentSection === "#projects" ? "border-b border-[#009394] text-[#009394] hover:brightness-125" : "hover:border-b hover:border-[#009394] hover:text-[#009394]"} px-1.5`}>Proyectos</a>
+               className={`${currentSection === "#projects" ? "border-b border-[#009394] text-[#009394] hover:brightness-125" : "hover:border-b hover:border-[#009394] hover:text-[#009394]"} px-1.5`}>Projetos</a>
           </li>
           <li>
             <a href="#contact"
