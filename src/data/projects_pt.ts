@@ -1,4 +1,6 @@
-const projects: {name:string; thumbnail:string;url:string;description:string;skills:string[];status:string;projectPage:string;}[] = [
+import type { Project } from "../types/Projects.ts";
+
+const projects: Project[] = [
   {
     name: 'Events Booking',
     thumbnail: '/images/projects/eventsbooking_desktop.webp',
