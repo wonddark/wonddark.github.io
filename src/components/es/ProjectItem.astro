@@ -17,31 +17,31 @@ const {
   </div>
   <div class="flex flex-col gap-2 flex-1 flex-grow">
     <div>
-      <p class="text-lg text-gray-500 font-extralight">Nombre</p>
-      <h6 class="font-bold">{name}</h6>
+      <p class="text-lg text-gray-500">Nombre</p>
+      <h6 class="">{name}</h6>
     </div>
     <div>
-      <p class="text-lg text-gray-500 font-extralight">Descripción</p>
+      <p class="text-lg text-gray-500">Descripción</p>
       <p>{description}</p>
     </div>
     <div>
-      <p class="text-lg text-gray-500 font-extralight">Habilidades</p>
+      <p class="text-lg text-gray-500">Habilidades</p>
       <ul
-        class="flex gap-1.5 text-sm italic font-bold text-[#00abac]">{skills.slice(0, 3).map((item: string) =>
+        class="flex gap-1.5 text-sm italic text-link">{skills.slice(0, 3).map((item: string) =>
         <li><span>{item}</span></li>)}</ul>
     </div>
     <div>
-      <p class="text-lg text-gray-500 font-extralight">Estado</p>
+      <p class="text-lg text-gray-500">Estado</p>
       <p
-        class="flex items-center gap-1 font-bold w-fit"><span class="h-2.5 w-2.5 inline-block align-middle rounded-full bg-[#00abac]"></span>{status}</p>
+        class="flex items-center gap-1 w-fit"><span class="h-2.5 w-2.5 inline-block align-middle rounded-full bg-[#00abac]"></span>{status}</p>
     </div>
     <div>
-      <p class="text-lg text-gray-500 font-extralight">Url</p>
-      <a href={url} target="_blank" class="hover:text-[#00abac]">{url} <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      <p class="text-lg text-gray-500">Link</p>
+      <a href={url} target="_blank">{url} <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
     </div>
     <div>
-      <p class="text-lg text-gray-500 font-extralight">Detalles</p>
-      <a href={projectPage} class="hover:text-[#00abac]">{projectPage}</a>
+      <p class="text-lg text-gray-500">Detalles</p>
+      <a href={projectPage}>{projectPage}</a>
     </div>
   </div>
 </div>
