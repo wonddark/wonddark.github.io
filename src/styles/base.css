@@ -106,7 +106,7 @@ svg, path, i, svg ~ span {
     transition-duration: 0s;
 }
 
-section:nth-child(even) {
+section:nth-of-type(odd) {
     background: var(--alternate-background);
 }
 
