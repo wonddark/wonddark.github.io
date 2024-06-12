@@ -69,7 +69,7 @@ import LinkButton from "../LinkButton.astro";
   </div>
 </header>
 
-<script type="module">
+<script is:inline type="module">
   const contactButton = document.getElementById('contact-button')
   contactButton && contactButton.addEventListener('click', (e) => {
     e.preventDefault()
