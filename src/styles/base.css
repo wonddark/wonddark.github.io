@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 :root {
-    --primary-color: #00AEAE;
+    --primary-color: #007f7f;
     --color: #1D2122;
     --background: #F2F3F4;
     --alternate-background: #CDD2D4;
@@ -13,8 +13,7 @@
     --input-background: #F2F3F4;
     --input-background-focus: #EEE;
     --header-nav-background: #ececec;
-    --link-color: #006363;
-    --link-hover-brightness: 115%;
+    --link-hover-brightness: 85%;
     --default-weigth: 400;
     --heading-weight: 500;
 }
@@ -28,7 +27,6 @@
         --hover-background: #006270;
         --input-background-focus: #e2e2e2;
         --header-nav-background: #003535;
-        --link-color: #59bdbf;
         --link-hover-brightness: 115%;
         --default-weigth: 300;
         --heading-weight: 400;
@@ -54,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-    color: var(--link-color)
+    color: var(--primary-color);
 }
 
 a:hover {
