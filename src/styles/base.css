@@ -83,7 +83,7 @@ input:not(:has([type='submit'],[type='reset'],[type='button'])):focus, textarea:
 
     to {
         height: 38px;
-        background-color: var(--header-nav-background);
+        background-color: var(--background);
     }
 }
 
